@@ -9,6 +9,21 @@
     })
 </script>
       <link rel="icon" type="image/x-icon" href="/bot.ico">
+        <script>
+      const doc = document;
+const menuOpen = doc.querySelector(".menu");
+const menuClose = doc.querySelector(".close");
+const overlay = doc.querySelector(".overlay");
+
+menuOpen.addEventListener("click", () => {
+  overlay.classList.add("overlay--active");
+});
+
+menuClose.addEventListener("click", () => {
+  overlay.classList.remove("overlay--active");
+});
+
+    </script>
     <!-- Hotjar Tracking Code for Bottle -->
 <script>
     (function(h,o,t,j,a,r){
@@ -385,5 +400,6 @@ p {
 var a = location.href; 
 var b = a.substring(a.indexOf("?")+1);
 location.replace(b);
+    </script>
 </body>
 </html>
